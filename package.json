@@ -1,0 +1,11 @@
+{
+  "name": "reddit_finder",
+  "version": "1.0.0",
+  "description": "using reddit api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ilyas Ezzahid",
+  "license": "MIT"
+}

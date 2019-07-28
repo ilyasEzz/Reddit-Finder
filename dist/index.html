@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Reddit Finder</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-info mb-3 ">
+        <div class="container">
+            <span class="navbar-brand">Reddit Finder</span>
+        </div>
+    </nav>
+    <div class="container" id="search-container">
+        <div id="search" class="card card-body bg-light mb-3">
+            <h4>Search Reddit</h4>
+            <form class="search-form">
+                <div class="form-group">
+                    <input class="form-control mb-3" type="text" placeholder="Search something..." id="search-text">
+                </div>
+                <div class="form-check form-check-inline"> Search By:
+                    <input type="radio" class="form-check-input ml-2" checked="" name="sortby" value="relevance">
+                    <label class="form-check-label">Relevance</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input ml-2" name="sortby" value="new">
+                    <label class="form-check-label">Latest</label>
+                </div>
+                <h5 class="mt-2">Limits</h5>
+                <div class="form-group">
+                    <select name="limit" id="limit" class="form-control ml-2">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <button class=" mt-4 btn btn-block  btn-secondary " type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="results"></div>
+
+
+    </div>
+
+</body>
+<script src="/Reddit_Finder.e31bb0bc.js"></script>
+
+</html>
